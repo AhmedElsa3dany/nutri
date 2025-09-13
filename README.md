@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Ahmed-S-A-A/NutriMind/main/assets/images/logo.png" width="220" alt="NutriMind Logo">
-</p>
+
 
 # NutriMind
 
