@@ -1,138 +1,86 @@
-<p align="center"> <img src="https://raw.githubusercontent.com/Ahmed-S-A-A/NutriMind/main/assets/images/logo.png" width="200" alt="NutriMind Logo"> </p> <p align="center"> <strong>Your journey to better health starts here.</strong> A mobile app that helps you build personalized health and nutrition habits to improve your physical and mental well-being. </p>
-🌟 Overview
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Ahmed-S-A-A/NutriMind/main/assets/images/logo.png" width="220" alt="NutriMind Logo">
+</p>
 
-NutriMind is a Flutter application designed to be your personal health companion.
-Through a series of detailed health surveys, the app understands your needs and goals to create customized daily routines that help you achieve a balanced lifestyle.
+# NutriMind
 
-✨ Key Features
+**Your journey to better health starts here.**
+NutriMind is a Flutter app that helps users build personalized health and nutrition habits to improve both physical and mental well‑being through daily, easy-to-follow routines.
 
-🎬 Professional Onboarding – Smooth and engaging onboarding screens.
+---
 
-✅ Integrated Auth System – Sign up / login with session management and session persistence.
+## 🌟 Overview
 
-📝 Comprehensive Health Surveys
+NutriMind collects detailed health and lifestyle data via interactive surveys (name, DOB, weight, height, sleep, fatigue, headaches, diet habits, activity level, etc.) and generates personalized daily routines split into Morning, Mid‑day, Evening, and Night.
 
-Collect personal info: name, date of birth, weight, height.
+---
 
-Track health issues: sleep hours, fatigue, headaches.
+## ✨ Key Features
 
-Lifestyle habits: desk work, exercise, nutrition.
+* 🎬 Professional onboarding experience.
+* ✅ Auth system with session persistence.
+* 📝 Comprehensive health surveys for tailored recommendations.
+* 🍏 Personalized daily routines and task lists.
+* 💪 Simple daily task tracking (mark tasks as completed).
+* 🎨 Modern UI with support for dark mode.
+* ⚙️ State management with `flutter_bloc` (Cubit).
+* 🌐 Backend communication using `dio` with cookie management (`dio_cookie_manager`).
 
-🍏 Personalized Daily Routines – Routines generated and divided by morning, mid-day, evening, night.
+---
 
-💪 Daily Task Tracking – Simple UI to mark tasks as completed.
+## 🛠 Tech Stack
 
-🎨 Modern & Attractive Design – Clean layouts, high-quality icons and imagery.
+* Language: **Dart**
+* Framework: **Flutter**
+* State management: **flutter\_bloc (Cubit)**
+* Networking: **dio**
+* Cookie management: **dio\_cookie\_manager**, **cookie\_jar**
+* Icons: **font\_awesome\_flutter**
+* Fonts: **google\_fonts**
 
-⚙️ Advanced State Management – Implemented with flutter_bloc (Cubit).
+---
 
-🌐 Backend Communication – Uses Dio with cookie management (dio_cookie_manager) for authenticated requests.
+## 🚀 Quick Start
 
-📁 Project Structure
-lib/
-├── core/
-│   ├── utils/       # Helper files (colors, images, styles)
-│   └── widget/      # App-level shared widgets
-│
-├── feature/
-│   ├── onboarding/              # Onboarding screens
-│   ├── regestration_and_login/  # Login & registration screens
-│   ├── health_info_input/       # Health info input and surveys
-│   ├── routines/                # Screens for displaying personalized routines
-│   └── splah/                   # Splash Screen
-│
-└── main.dart   # App entry point
+1. **Clone the repo**
 
-🛠️ Tech Stack
-
-Language: Dart
-
-Framework: Flutter
-
-State Management: flutter_bloc (Cubit)
-
-Networking: Dio
-
-Cookie Management: dio_cookie_manager
-
-Icons: font_awesome_flutter
-
-Fonts: google_fonts
-
-🔧 Dependencies (example)
-
-Add these (or similar) to your pubspec.yaml:
-
-flutter_bloc
-
-dio
-
-dio_cookie_manager
-
-cookie_jar
-
-font_awesome_flutter
-
-google_fonts
-
-flutter_svg or vector_graphics (if using SVG assets)
-
-lottie (optional for animations)
-
-🚀 Getting Started
-Prerequisites
-
-Install Flutter SDK
-.
-
-Have an emulator or a physical device connected.
-
-Clone the repository
+```bash
 git clone https://github.com/Ahmed-S-A-A/NutriMind.git
 cd NutriMind
+```
 
-Install dependencies
+2. **Get dependencies**
+
+```bash
 flutter pub get
+```
 
-Run the app
+3. **Run the app**
+
+```bash
 flutter run
+```
 
-🧩 Notes & Best Practices
+---
 
-Ensure all assets (images, SVGs) are declared properly in pubspec.yaml and filenames are case-sensitive (Android/Linux).
+## ⚠️ Important Notes Before Pushing to GitHub
 
-Use full restart after adding new assets or changing pubspec.yaml (hot reload may not pick up new assets).
+* Make sure all assets (images, SVGs, etc.) are declared in `pubspec.yaml` using the correct filenames and casing (case‑sensitive).
+* After adding assets or changing `pubspec.yaml`, perform a full restart — hot reload might not pick up new assets.
+* Never commit API keys or secrets to a public repo. Use environment variables or secure local files and add them to `.gitignore`.
+* Provide example config files (e.g. `api_constants.example.dart`) and keep the real `api_constants.dart` out of version control.
 
-Protect network secrets (API keys) — do not hardcode them in the repository. Use environment variables or secure storage.
 
-Consider adding unit/widget tests for critical logic and flows (survey processing, routine generation, auth flows).
 
-📦 Useful Commands
+---
 
-flutter pub get — fetch dependencies
+## 🤝 Contributing
 
-flutter clean — clean build artifacts
+1. Fork the repository.
+2. Create a branch: `git checkout -b feature/your-feature`
+3. Commit and push your changes.
+4. Open a pull request describing your changes.
 
-flutter run — run the app on connected device/emulator
+---
 
-flutter build apk / flutter build ios — build release artifacts
 
-🤝 Contributing
-
-Contributions, issues and feature requests are welcome. Feel free to open an issue or submit a pull request.
-
-When contributing:
-
-Fork the repository.
-
-Create a new branch (git checkout -b feature/your-feature).
-
-Make your changes and add tests if possible.
-
-Submit a pull request describing your changes.
-
-📄 License
-
-This project is available under the MIT License. See the LICENSE file for details.
-
-<p align="center"> Developed with 💚 by <a href="https://github.com/Ahmed-S-A-A">Ahmed S. A. A</a> </p>
